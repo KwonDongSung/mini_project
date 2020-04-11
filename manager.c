@@ -51,7 +51,7 @@ void searchname(Product *p, int count){
     for (int i=0; i<count; i++){
         if(p[i].price != -1){
             if (strstr(p[i].name, search)){
-                printf("%d. ",i+1);
+                printf("%d번 상품 ",i+1);
 readproduct(p[i]);
                 scount++;
             }
@@ -68,7 +68,7 @@ void searchprice(Product *p, int count){
     for (int i=0; i<count; i++){
         if(p[i].price != -1){
             if (p[i].price ==  search){
-                printf("%d. ",i+1);
+                printf("%d번 상품 ",i+1);
                 readproduct(p[i]);
                 scount++;
             }
@@ -85,7 +85,7 @@ void searchstar(Product *p, int count){
     for (int i=0; i<count; i++){
         if(p[i].price != -1){
 if (p[i].star ==  star){
-                printf("%d. ",i+1);
+                printf("%d번 상품 ",i+1);
                 readproduct(p[i]);
                 scount++;
             }
