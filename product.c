@@ -7,6 +7,7 @@ printf("1. 상품조회\n");
 printf("2. 상품추가\n");
 printf("3. 상품수정\n");
 printf("4. 상품삭제\n");
+printf("5. 파일저장\n");
 printf("0. 종료\n\n");
 printf("=> 원하는 메뉴는? ");
 scanf("%d",&menu);

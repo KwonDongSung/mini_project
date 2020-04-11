@@ -53,6 +53,15 @@ if (delete == 1)
 if (deleteproduct(&p[no-1])) count --;
 continue;
 }
+else if (menu==5){
+#ifdef DEBUG
+printf ("debug[market.c] : call saveproduct()\n");
+#endif
+if (count==0)
+printf ("데이터가 없습니다!\n");
+else
+saveproduct(p,current);
+}
 }
 printf("종료됨!\n");
 return 0;
