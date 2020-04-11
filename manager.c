@@ -60,4 +60,38 @@ readproduct(p[i]);
     if(scount == 0)printf("=> 검색된 데이터 없음!");
     printf("\n");
 }
+void searchprice(Product *p, int count){
+    int scount = 0;
+    int search;
+    printf("원하는 가격은? ");
+    scanf("\n %d", &search);
+    for (int i=0; i<count; i++){
+        if(p[i].price != -1){
+            if (p[i].price ==  search){
+                printf("%d. ",i+1);
+                readproduct(p[i]);
+                scount++;
+            }
+        }
+    }
+    if(scount == 0)printf("=> 검색된 데이터 없음!");
+    printf("\n");
+}
+void searchstar(Product *p, int count){
+    int scount = 0;
+    int star;
+    printf("원하는 별점은? ");
+    scanf("\n %d", &star);
+    for (int i=0; i<count; i++){
+        if(p[i].price != -1){
+if (p[i].star ==  star){
+                printf("%d. ",i+1);
+                readproduct(p[i]);
+                scount++;
+            }
+        }
+    }
+    if(scount == 0)printf("=> 검색된 데이터 없음!");
+    printf("\n");
+}
 
