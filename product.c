@@ -34,7 +34,7 @@ return 1;
 }
 
 void readproduct(Product p){
-printf("%s %dg\n", p.name,p.mass);
+printf("\n%s %dg\n", p.name,p.mass);
 printf("%d원\n",p.price);
 printf("10g당: %.2f원\n",p.ppt);
 for(int i=1;i<=p.star;i++){

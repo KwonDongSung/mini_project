@@ -2,7 +2,7 @@
 void listproduct(Product *p, int count){
 for (int i = 0 ; i<count ; i++){
 	if(p[i].price == -1) continue;
-        printf("%d. ", i+1);
+        printf("%d번 상품 ", i+1);
         readproduct(p[i]);
 	printf("\n");
 }
