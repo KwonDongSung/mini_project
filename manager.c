@@ -27,4 +27,20 @@ void saveproduct(Product *p, int count){
         fclose(fp);
         printf("저장됨!!\n");
 }
+int loadproduct(Product *p){
+    FILE *fp;
+int count = 0;
+    fp = fopen("product.txt","rt");
+    if (fp == NULL){
+        printf("=> 파일없음!!\n");
+        return 0;
+    }
+    for(; ; count++){
+        fscanf(fp,"%d %d %f %d %[^\n]", &p[count].price , &p[count].mass, &p[count].ppt,&p[count].star,p[count].name);
+        if (feof(fp)) break;
+    }
+    fclose(fp);
+    printf ("=>로딩 성공!\n");
+    return count;
+}
 

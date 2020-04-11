@@ -4,6 +4,8 @@ int main(){
 Product p[100];
 int current = 0;
 int count = 0, menu;
+count = loadproduct(p);
+current = count;
 while (1){
 menu = selectMenu();
 if (menu == 0) break;
