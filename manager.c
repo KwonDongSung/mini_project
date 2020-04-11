@@ -97,8 +97,8 @@ if (p[i].star ==  star){
 
 int chooseby(){
 int choose;
-printf("1.이름 , 2.가격 , 3.별점, 0.취소\n");
-printf("어떤 방법으로 검색하시겠습니까? ");
+printf("1.이름 , 2.가격 , 3.별점\n");
+printf("어떤 방법으로 검색하시겠습니까?(취소:0) ");
 scanf ("%d" , &choose);
 return choose;
 }
