@@ -95,3 +95,11 @@ if (p[i].star ==  star){
     printf("\n");
 }
 
+int chooseby(){
+int choose;
+printf("1.이름 , 2.가격 , 3.별점, 0.취소\n");
+printf("어떤 방법으로 검색하시겠습니까? ");
+scanf ("%d" , &choose);
+return choose;
+}
+
