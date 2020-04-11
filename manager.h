@@ -7,4 +7,4 @@ int selectdatano(Product *p, int count);
 void searchname(Product *p, int count);
 void searchprice(Product *p, int count);
 void searchstar(Product *p, int count);
-
+int chooseby();
