@@ -11,5 +11,4 @@ $(DTARGET) : $(OBJECTS)
 	$(CC) $(CFLAGS) -DDEBUG -o $@ $^
 
 clean : 
-	rm *.o *.txt
-	rm $(TARGET) $(DTARGET)
+	rm *.o *.txt $(TARGET) $(DTARGET)
