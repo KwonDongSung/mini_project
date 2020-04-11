@@ -68,7 +68,20 @@ else if (menu==6){
 #ifdef DEBUG
 printf ("debug[market.c] : call searchname()\n");
 #endif
-searchname(p,current);}
+searchname(p,current);
+}
+else if (menu ==7){
+#ifdef DEBUG
+printf ("debug[market.c] : call searchprice()\n");
+#endif
+searchprice(p,current);
+}
+else if(menu==8){
+#ifdef DEBUG
+printf ("debug[market.c] : call searchstar()\n");
+#endif
+searchstar(p,current);
+}
 }
 printf("종료됨!\n");
 return 0;
