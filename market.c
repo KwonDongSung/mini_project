@@ -64,23 +64,25 @@ printf ("데이터가 없습니다!\n");
 else
 saveproduct(p,current);
 }
-else if (menu==6){
+else if(menu==6){
+int k =0;
+k = chooseby();
+if (k==1) {
 #ifdef DEBUG
 printf ("debug[market.c] : call searchname()\n");
 #endif
-searchname(p,current);
-}
-else if (menu ==7){
+searchname(p,current);}
+else if (k==2){
 #ifdef DEBUG
 printf ("debug[market.c] : call searchprice()\n");
 #endif
-searchprice(p,current);
-}
-else if(menu==8){
+searchprice(p,current);}
+else if (k==3) {
 #ifdef DEBUG
 printf ("debug[market.c] : call searchstar()\n");
 #endif
-searchstar(p,current);
+searchstar(p,current);}
+else if (k==0) continue;
 }
 }
 printf("종료됨!\n");
