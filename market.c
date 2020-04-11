@@ -64,6 +64,11 @@ printf ("데이터가 없습니다!\n");
 else
 saveproduct(p,current);
 }
+else if (menu==6){
+#ifdef DEBUG
+printf ("debug[market.c] : call searchname()\n");
+#endif
+searchname(p,current);}
 }
 printf("종료됨!\n");
 return 0;

@@ -43,4 +43,21 @@ int count = 0;
     printf ("=>로딩 성공!\n");
     return count;
 }
+void searchname(Product *p, int count){
+    int scount = 0;
+    char search[20];
+    printf("검색할 이름은? ");
+    scanf("\n %[^\n]", search);
+    for (int i=0; i<count; i++){
+        if(p[i].price != -1){
+            if (strstr(p[i].name, search)){
+                printf("%d. ",i+1);
+readproduct(p[i]);
+                scount++;
+            }
+        }
+    }
+    if(scount == 0)printf("=> 검색된 데이터 없음!");
+    printf("\n");
+}
 
