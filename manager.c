@@ -16,7 +16,7 @@ listproduct(p, count);
 printf ("번호는 (취소:0)?");
 scanf("%d" ,&num);
 return num;
-
+}
 void saveproduct(Product *p, int count){
         FILE *fp;
         fp = fopen("product.txt","wt");
